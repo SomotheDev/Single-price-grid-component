@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+  font-family: "Karla";
+}
+
+body{
+  background:#e5eff5;
+}
+
+h2{
+  font-size:20px;
+  color:#fff;
+}
+
+p{
+  font-size:16px;
+  color:#D3D3D3;
+}
+
+span{
+  margin:.8rem;
+  font-size:16px;
+  color:#FBF8F1;
+}
+
+.container{
+    background:#e5eff5;
+    width: auto;
+    height:auto;
+    border-radius:10px;
+    display:flex;
+    padding:10px;
+    margin: auto;
+    
+}
+
+.day{
+  color: #c0df34;
+}
+
+.card{
+    padding:5px 15px;
+}
+
+.top-card{
+    background:#fff;
+    border-radius:10px 10px 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bottom-cards{
+    display:flex;
+    flex-direction:row;
+    border-radius:0px 0px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price h2,
+.bottom-cards #card-left p{
+  color:#fff
+}
+
+.bottom-cards #card-left{
+    background: #35b19b;
+    border-radius:0px 0px 0px 10px;
+    width: 100%;
+}
+
+.bottom-cards #card-left .price p{
+  color:#b7e4dc;
+}
+
+.bottom-cards #card-right{
+    background: #7de1cf;
+    border-radius:0px 0px 10px 0px;
+    width: 100%;
+}
+
+.bottom-cards #card-right p{
+  font-size:16px;
+}
+
+.bottom-cards #card-right p{
+  color:#dcf4f0;
+}
+
+.price{
+  display:flex;
+}
+
+.price p{
+  padding:1px 0px 0px 15px;
+}
+
+button {
+  background-color: #c0df34;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border:none;
+  border-radius:5px;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+
+@media screen and (max-width:1440px){
+    .container{
+        flex-direction:column;
+    }
+}
+
+@media screen and (max-width:375px){
+    .bottom-cards{
+        flex-direction:column;
+    }
+  
+  .top-card{
+      width:100%;
+  }
+    .bottom-cards #card-left{
+        background: #37e2d5;
+        border-radius:0px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .bottom-cards #card-right{
+        background: #CDF0EA;
+        border-radius:0px 0px 0px 0px;
+        width: 100%;
+    }
+}
